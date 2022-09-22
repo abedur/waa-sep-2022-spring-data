@@ -13,9 +13,9 @@ import java.util.List;
 public class Category {
     @Id
     @GeneratedValue
-    private int id;
+    private Integer id;
     private String name;
 
-    @OneToMany
-    private List <Product>products;
+//    @OneToMany
+//    private List <Product>products;
 }

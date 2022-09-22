@@ -7,22 +7,24 @@ import java.util.List;
 
 @Entity
 @Data
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue
-    private int id;
+    private Integer id;
     private String email;
     private String password;
     private String firstname;
-    private String lastName;
+    private String lastname;
 
-    @OneToMany
-    @JoinColumn
-    private List<Review> reviews;
 
-    @OneToOne
-    @JoinColumn
-    private Address address;
+//    @OneToMany
+//    @JoinColumn(name = "user")
+//    private List<Review> reviews;
+//
+//    @OneToOne
+//    @JoinColumn
+//    private Address address;
 
 
 

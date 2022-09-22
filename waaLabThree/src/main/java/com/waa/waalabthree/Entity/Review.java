@@ -1,13 +1,15 @@
 package com.waa.waalabthree.Entity;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import lombok.Data;
 
+import javax.persistence.*;
+
+@Entity
+@Data
 public class Review {
     @Id
     @GeneratedValue
-    private int id;
+    private Integer id;
     private String comment;
 
     @ManyToOne

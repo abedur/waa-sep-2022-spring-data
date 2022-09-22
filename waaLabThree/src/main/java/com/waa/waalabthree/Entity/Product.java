@@ -13,11 +13,12 @@ public class Product {
 
     @Id
     @GeneratedValue
-    private int id;
+    private Integer id;
     private String name;
     private double price;
     private String rating;
 
    @ManyToOne
     private Category category;
+
 }
